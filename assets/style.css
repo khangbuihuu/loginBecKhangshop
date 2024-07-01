@@ -1,0 +1,388 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive styles */
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.list>h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log {
+    display: flex;
+}
+
+.log a {
+    color: #4525f2;
+}
+
+.list {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.from-group {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.log>p {
+    margin: 20px 20px 20px 20px;
+}
+
+.from-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.check input {
+    margin-right: 10px;
+}
+
+#btn-login {
+
+    width: 100%;
+    padding: 10px;
+    background-color: #4525f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img {
+    display: none;
+}
+
+.media-img {
+    margin: 20px 0px 20px 40px;
+
+
+}
+
+.list-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.list-icon a img {
+    width: 48px;
+    height: 48px;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.close a img {
+    width: 24px;
+    height: 24px;
+}
+
+.list-icon>a>img:hover {
+    transform: scale(1.1);
+}
+
+.rotate-img {
+    transition: transform 0.2s ease;
+}
+
+.rotate-img:hover {
+    transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 601px) {
+
+
+    .header {
+        top: 83px;
+        left: 236px;
+        width: 795px;
+        height: 603px;
+
+    }
+
+    .container {
+        width: 380px;
+    }
+
+    .list {
+        top: 145px;
+        left: 328px;
+        width: 311px;
+        height: 42px;
+        padding-top: 50px;
+        margin-right: 500px;
+    }
+
+    .from-group input {
+        top: 256px;
+        left: 328px;
+        width: 300px;
+        height: 48px;
+    }
+
+    .close {
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 700px;
+        margin-right: 0px;
+    }
+
+    .log>p {
+        margin-left: 45px;
+    }
+
+    .main {
+        height: 0;
+    }
+
+    .media-img {
+        top: 528px;
+        left: 327px;
+        width: 272px;
+        height: 18px;
+        margin: 370px 0 0 10px;
+    }
+
+    .list-icon {
+        width: 300px;
+        margin: 20px 0 0 0px;
+    }
+
+
+    .img {
+        display: block;
+        margin-left: 400px;
+        top: 190px;
+        left: 716px;
+        width: 278px;
+        height: 412px;
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .media-img {
+        margin: 20px 0px 20px 30px;
+
+
+    }
+
+    .container {
+        width: 370px;
+    }
+
+    .list {
+        width: 300px;
+    }
+
+    .list>h2 {
+        margin-left: 40px;
+    }
+
+    .from-group input {
+        width: 300px;
+    }
+
+    .close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        margin: 0 0px 300px 320px;
+    }
+
+    .log {
+        margin-left: 18px;
+    }
+
+    .img {
+        display: none;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .check {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .header {
+        max-width: 80%;
+        padding: 30px;
+        width: 500px;
+        text-align: center;
+    }
+
+    h2 {
+        width: 300px;
+        margin-left: 150px;
+    }
+
+    .container {
+        width: 500px;
+        height: 400px;
+
+    }
+
+    .check {
+        width: 200px;
+        margin-left: 130px;
+    }
+
+    .log {
+        width: 500px;
+        margin-left: 150px;
+    }
+
+    #btn-login {
+        margin-left: 150px;
+    }
+
+    .media-img {
+        margin-left: 35px;
+    }
+
+    .from-group {
+        margin-left: 150px;
+    }
+
+    .from-group>p {
+        width: 150px;
+    }
+
+    .close {
+        margin: 10px 0px 0 380px;
+    }
+
+    .list-icon {
+        margin-left: 20px;
+    }
+
+    p>a {
+        width: 200px;
+
+    }
+
+    .list {
+        width: 45%;
+    }
+
+    .from-group input {
+        width: 300px;
+    }
+
+    .img {
+        display: none;
+    }
+}
+
+.img {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.img {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.img {
+    animation-name: fadeUpAnime;
+    /*アニメーションの定義名*/
+    animation-duration: 1s;
+    /*アニメーション変化時間 ※デフォルト*/
+    animation-fill-mode: forwards;
+    /*アニメーションの開始と終了時の状態を指定*/
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
