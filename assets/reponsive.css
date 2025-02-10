@@ -1,0 +1,23 @@
+@media only screen and (min-width: 769px) {
+    body {
+        display: grid;
+        place-items: center;
+
+    }
+
+    .main,
+    .container,
+    .info1,
+    .flex {
+        margin-left: 0px;
+    }
+
+    #content4,
+    #about {
+        margin-left: 0px;
+    }
+
+    #content4 {
+        text-align: center;
+    }
+}
